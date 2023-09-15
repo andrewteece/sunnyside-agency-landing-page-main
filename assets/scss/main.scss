@@ -1,1 +1,8 @@
 @use './assets/base';
+@use './assets/colors' as *;
+
+:root {
+  @each $color, $shade in $colors {
+    color: $color;
+  }
+}

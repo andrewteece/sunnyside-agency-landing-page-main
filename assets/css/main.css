@@ -11,4 +11,9 @@ img {
   display: block;
 }
 
+:root {
+  color: primary;
+  color: neutral;
+}
+
 /*# sourceMappingURL=main.css.map */
