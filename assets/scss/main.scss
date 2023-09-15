@@ -2,7 +2,9 @@
 @use './assets/colors' as *;
 
 :root {
-  @each $color, $shade in $colors {
-    color: $color;
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --clr-#{$color}-#{$shade}: #{$value};
+    }
   }
 }
