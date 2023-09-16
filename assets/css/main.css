@@ -1,3 +1,17 @@
+:root {
+  --ff-secondary: "Barlow", sans-serif;
+  --ff-main: "Fraunces", serif;
+  --fs-200: 0.875rem;
+  --fs-300: 0.9375rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3.5rem;
+  --fw-600: 600;
+  --fw-900: 900;
+}
+
 *,
 *::after,
 *::before {
@@ -9,6 +23,15 @@
 img {
   max-width: 100%;
   display: block;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-500);
+  font-weight: var(--fw-600);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-300);
+  margin: 0;
 }
 
 :root {
@@ -134,24 +157,14 @@ img {
   color: hsl(212, 27%, 19%);
 }
 
-:root {
-  --ff-secondary: "Barlow", sans-serif;
-  --ff-main: "Fraunces", serif;
-  --fs-200: 0.875rem;
-  --fs-300: 0.9375rem;
-  --fs-400: 1rem;
-  --fs-500: 1.125rem;
-  --fs-600: 1.25rem;
-  --fs-700: 2.5rem;
-  --fs-800: 3.5rem;
-  --fw-600: 600;
-  --fw-900: 900;
-}
-
 .wrapper {
   width: 100%;
-  max-width: 84.375rem;
-  margin-inline-end: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem 2.4rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

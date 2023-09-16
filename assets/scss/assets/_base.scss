@@ -1,3 +1,5 @@
+@use './typography' as *;
+
 *,
 *::after,
 *::before {
@@ -9,4 +11,13 @@
 img {
   max-width: 100%;
   display: block;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  font-size: var(--ff-500);
+  font-weight: var(--fw-600);
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-300);
+  margin: 0;
 }
