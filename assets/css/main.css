@@ -24,4 +24,9 @@ img {
   --clr-neutral-500: hsl(212, 27%, 19%);
 }
 
+:root {
+  --ff-secondary: "Barlow", sans-serif;
+  --ff-main: "Fraunces", serif;
+}
+
 /*# sourceMappingURL=main.css.map */
