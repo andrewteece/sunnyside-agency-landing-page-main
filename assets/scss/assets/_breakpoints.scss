@@ -1,3 +1,13 @@
 $sm: 23.4375em;
 $md: 50em;
 $lg: 90rem;
+
+@mixin mdq($propertyName, $defaultValue, $mediaQueries: ()) {
+  #{$propertyName}: #{$defaultValue};
+
+  @each $breakpoint, $value in $mediaQueries {
+    @media (min-width: #{$breakpoint}) {
+      #{$propertyName}: #{$value};
+    }
+  }
+}
