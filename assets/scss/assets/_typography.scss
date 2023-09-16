@@ -14,6 +14,22 @@
   --fw-900: 900;
 }
 
+$textSizes: (
+  'sm': clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem),
+  'md': clamp(1.35rem, calc(1.24rem + 0.48vw), 1.67rem),
+  'lg': clamp(1.62rem, calc(1.41rem + 0.9vw), 2.22rem),
+  'xl': clamp(2.33rem, calc(1.76rem + 2.43vw), 3.95rem),
+  '2xl': clamp(7.01rem, calc(2.07rem + 5.49vw), 3.36rem),
+);
+
+@each $textSize, $textValue in $textSizes {
+  .text {
+    &-#{$textSize} {
+      font-size: #{$textValue};
+    }
+  }
+}
+
 h1,
 h2 {
   line-height: 1.1;
