@@ -13,3 +13,33 @@
   --fw-600: 600;
   --fw-900: 900;
 }
+
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+main {
+  line-height: 1.5;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-heading {
+  font-family: var(--ff-main);
+}
+
+.font-body {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-600);
+}
+
+.spaced {
+  letter-spacing: 0.0625rem;
+}
