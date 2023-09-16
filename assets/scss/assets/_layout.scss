@@ -56,3 +56,19 @@ $directions: (
     }
   }
 }
+
+$displays: block, none, inline, inline-block, flex, grid;
+
+@each $display in $displays {
+  .#{$display} {
+    display: #{$display};
+  }
+}
+
+$positions: relative, absolute, fixed;
+
+@each $position in $positions {
+  .#{$position} {
+    position: #{$position};
+  }
+}

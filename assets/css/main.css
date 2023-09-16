@@ -24,6 +24,116 @@ img {
   --clr-neutral-500: hsl(212, 27%, 19%);
 }
 
+.text-primary-100 {
+  color: hsl(7, 99%, 70%);
+}
+.text-primary-100:is(:link, :visited) {
+  color: hsl(7, 99%, 70%);
+}
+
+.bg-primary-100 {
+  color: hsl(7, 99%, 70%);
+}
+
+.text-primary-200 {
+  color: hsl(51, 100%, 49%);
+}
+.text-primary-200:is(:link, :visited) {
+  color: hsl(51, 100%, 49%);
+}
+
+.bg-primary-200 {
+  color: hsl(51, 100%, 49%);
+}
+
+.text-primary-300 {
+  color: hsl(167, 40%, 24%);
+}
+.text-primary-300:is(:link, :visited) {
+  color: hsl(167, 40%, 24%);
+}
+
+.bg-primary-300 {
+  color: hsl(167, 40%, 24%);
+}
+
+.text-primary-400 {
+  color: hsl(198, 62%, 26%);
+}
+.text-primary-400:is(:link, :visited) {
+  color: hsl(198, 62%, 26%);
+}
+
+.bg-primary-400 {
+  color: hsl(198, 62%, 26%);
+}
+
+.text-primary-500 {
+  color: hsl(168, 34%, 41%);
+}
+.text-primary-500:is(:link, :visited) {
+  color: hsl(168, 34%, 41%);
+}
+
+.bg-primary-500 {
+  color: hsl(168, 34%, 41%);
+}
+
+.text-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+.text-neutral-100:is(:link, :visited) {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-neutral-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.text-neutral-200 {
+  color: hsl(210, 4%, 67%);
+}
+.text-neutral-200:is(:link, :visited) {
+  color: hsl(210, 4%, 67%);
+}
+
+.bg-neutral-200 {
+  color: hsl(210, 4%, 67%);
+}
+
+.text-neutral-300 {
+  color: hsl(232, 10%, 55%);
+}
+.text-neutral-300:is(:link, :visited) {
+  color: hsl(232, 10%, 55%);
+}
+
+.bg-neutral-300 {
+  color: hsl(232, 10%, 55%);
+}
+
+.text-neutral-400 {
+  color: hsl(213, 9%, 39%);
+}
+.text-neutral-400:is(:link, :visited) {
+  color: hsl(213, 9%, 39%);
+}
+
+.bg-neutral-400 {
+  color: hsl(213, 9%, 39%);
+}
+
+.text-neutral-500 {
+  color: hsl(212, 27%, 19%);
+}
+.text-neutral-500:is(:link, :visited) {
+  color: hsl(212, 27%, 19%);
+}
+
+.bg-neutral-500 {
+  color: hsl(212, 27%, 19%);
+}
+
 :root {
   --ff-secondary: "Barlow", sans-serif;
   --ff-main: "Fraunces", serif;
@@ -88,6 +198,11 @@ main {
   letter-spacing: 0.0625rem;
 }
 
+@media (min-width: 50em) {
+  .md\:text-left {
+    text-align: left;
+  }
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -902,6 +1017,66 @@ main {
 }
 .mb-auto {
   margin-block-end: auto;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+[aria-label="main navigation"] {
+  width: 100%;
+  display: none;
+}
+
+header {
+  background-image: url("/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+@media (min-width: 90rem) {
+  header {
+    background-image: url(/images/desktop/image-header.jpg);
+  }
+}
+
+.hero {
+  place-content: center;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .wrapper {

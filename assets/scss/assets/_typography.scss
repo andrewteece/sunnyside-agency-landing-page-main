@@ -1,3 +1,5 @@
+@use './breakpoints' as *;
+
 :root {
   --ff-secondary: 'Barlow', sans-serif;
   --ff-main: 'Fraunces', serif;
@@ -58,4 +60,10 @@ main {
 
 .spaced {
   letter-spacing: 0.0625rem;
+}
+
+@media (min-width: $md) {
+  .md\:text-left {
+    text-align: left;
+  }
 }

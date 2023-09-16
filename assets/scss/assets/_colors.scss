@@ -23,3 +23,19 @@ $colors: (
     }
   }
 }
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{$color}-#{$shade} {
+      color: $value;
+
+      &:is(:link, :visited) {
+        color: $value;
+      }
+    }
+
+    .bg-#{$color}-#{$shade} {
+      color: $value;
+    }
+  }
+}
