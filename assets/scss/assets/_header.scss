@@ -1,7 +1,74 @@
+@use './colors' as *;
+
 .header {
-  height: 8rem;
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url(/images/mobile/image-header.jpg);
+  height: 8.5rem;
+  background-color: var(--clr-accent-200);
+}
+
+@media screen and (min-width: 62em) {
+  .header {
+    height: 12.2rem;
+  }
+
+  .header > .container {
+    min-width: 100%;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-indent: -999rem;
+}
+
+@media screen and (min-width: 62em) {
+  .logo {
+    transform: scale(1.35);
+    transform-origin: center left;
+    text-align: center;
+  }
+}
+
+.menu-button {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 62em) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2.4rem;
+  height: 0.2rem;
+  display: flex;
+  background-color: var(--clr-neutral-100);
+}
+
+.main__nav {
+  display: block;
+  width: calc(100% - 4.8rem);
+  height: auto;
+  position: absolute;
+  top: 11rem;
+  padding: 2.4rem 0;
+  text-align: center;
+  background-color: var(--clr-neutral-100);
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease-in-out;
+  z-index: 10;
 }

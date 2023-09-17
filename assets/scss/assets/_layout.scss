@@ -1,0 +1,14 @@
+@use './colors' as *;
+@use './typography' as *;
+@use './utilities' as *;
+@use './components' as *;
+
+.section {
+  width: 100vw;
+  height: auto;
+}
+
+.banner {
+  height: 100vh;
+  background-color: var(--clr-accent-200);
+}
